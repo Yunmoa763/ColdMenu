@@ -1,8 +1,8 @@
 package me.yunmoa.coldplugin.menu.internal.manager
 
-import me.yunmoa.coldplugin.menu.core.nashorn.hook.NashornHooker
-import me.yunmoa.coldplugin.menu.core.nashorn.hook.impl.LegacyNashornHookerImpl
-import me.yunmoa.coldplugin.menu.core.nashorn.hook.impl.NashornHookerImpl
+import me.yunmoa.coldplugin.menu.nashorn.hook.NashornHooker
+import me.yunmoa.coldplugin.menu.nashorn.hook.impl.LegacyNashornHookerImpl
+import me.yunmoa.coldplugin.menu.nashorn.hook.impl.NashornHookerImpl
 
 /**
  * ColdMenu

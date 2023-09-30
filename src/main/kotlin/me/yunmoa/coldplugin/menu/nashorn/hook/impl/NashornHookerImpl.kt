@@ -1,6 +1,6 @@
-package me.yunmoa.coldplugin.menu.core.nashorn.hook.impl
+package me.yunmoa.coldplugin.menu.nashorn.hook.impl
 
-import me.yunmoa.coldplugin.menu.core.nashorn.hook.NashornHooker
+import me.yunmoa.coldplugin.menu.nashorn.hook.NashornHooker
 import org.openjdk.nashorn.api.scripting.NashornScriptEngineFactory
 import org.openjdk.nashorn.api.scripting.ScriptObjectMirror
 import taboolib.common.env.RuntimeDependencies
@@ -54,7 +54,7 @@ class NashornHookerImpl : NashornHooker() {
         return (getNashornEngine() as Compilable).compile(reader)
     }
 
-    override fun invoke(compiledScript: me.yunmoa.coldplugin.menu.core.nashorn.script.CompiledScript, function: String, map: Map<String, Any>?, vararg args: Any): Any? {
+    override fun invoke(compiledScript: me.yunmoa.coldplugin.menu.nashorn.script.CompiledScript, function: String, map: Map<String, Any>?, vararg args: Any): Any? {
         val newObject: ScriptObjectMirror = (compiledScript.scriptEngine as Invocable).invokeFunction("newObject") as ScriptObjectMirror
         map?.forEach { (key, value) -> newObject[key] = value }
         return newObject.callMember(function, *args)

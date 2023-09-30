@@ -14,3 +14,5 @@ Plugin-Debug: '&8[&3Cold&bMenu&8] &e调试 &8| &f{0}'
 # 报错相关
 
 ExpansionError: '&8[&3Cold&bMenu&8] &4报错 &8| §6执行 §f{0} §6脚本的 §f{1} §6函数时出现错误, 报错如下:'
+InvalidScript: '&8[&3Cold&bMenu&8] &4报错 &8|'
+InvalidRoundingMode: '&8[&3Cold&bMenu&8] &4报错 &8|'

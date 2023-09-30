@@ -1,7 +1,8 @@
 package me.yunmoa.coldplugin.menu.internal
 
 import me.yunmoa.coldplugin.menu.ColdMenu.plugin
-import me.yunmoa.coldplugin.menu.util.DebugUtil.debug
+import me.yunmoa.coldplugin.menu.util.DebugUtils.debug
+import me.yunmoa.coldplugin.menu.util.ScriptUtils.eval
 import org.bukkit.Bukkit
 import taboolib.common.LifeCycle
 import taboolib.common.platform.Awake
@@ -31,6 +32,7 @@ object ColdMenuLoader {
     fun onEnable() {
         console().sendLang("Plugin-Enabled")
         debug("Debug 模式已开启.")
+        "print('JavaScript模块成功加载')".eval()
     }
 
     @Awake(LifeCycle.DISABLE)

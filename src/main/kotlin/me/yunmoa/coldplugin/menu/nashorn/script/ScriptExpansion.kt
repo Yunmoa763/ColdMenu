@@ -1,4 +1,4 @@
-package me.yunmoa.coldplugin.menu.core.nashorn.script
+package me.yunmoa.coldplugin.menu.nashorn.script
 
 import me.yunmoa.coldplugin.menu.internal.manager.HookerManager.nashornHooker
 import org.bukkit.Bukkit

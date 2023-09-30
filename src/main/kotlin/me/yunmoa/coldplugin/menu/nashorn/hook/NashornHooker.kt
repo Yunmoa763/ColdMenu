@@ -1,4 +1,4 @@
-package me.yunmoa.coldplugin.menu.core.nashorn.hook
+package me.yunmoa.coldplugin.menu.nashorn.hook
 
 import java.io.Reader
 import javax.script.Compilable
@@ -95,7 +95,7 @@ abstract class NashornHooker {
      * @param args 传入函数的参数
      * @return 返回值
      */
-    abstract fun invoke(compiledScript: me.yunmoa.coldplugin.menu.core.nashorn.script.CompiledScript, function: String, map: Map<String, Any>?, vararg args: Any): Any?
+    abstract fun invoke(compiledScript: me.yunmoa.coldplugin.menu.nashorn.script.CompiledScript, function: String, map: Map<String, Any>?, vararg args: Any): Any?
 
     /**
      * 检测引擎中是否包含对应函数
